@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>INFUSER – Learn. Grow. Express. Become More.</title>
+<meta name="theme-color" content="#6D0D27">
+<meta name="description" content="INFUSER offers English Speaking, Personality Development, Voice Training and Islamic and Spiritual Development programs for school students.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#FFFFFF;--ink:#141414;--mut:#585858;--card:#F6F6F6;--line:#E4E4E4;--brand:#6D0D27;--onbrand:#F8E7D3;--hero:#6D0D27;--cream:#F8E7D3;--hbg:#F8E7D3;--c:#6D0D27;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#000000;--ink:#FFFFFF;--mut:#ABABAB;--card:#121212;--line:#2B2B2B;--brand:#F8E7D3;--onbrand:#000000}}
+:root[data-theme="dark"]{--bg:#000000;--ink:#FFFFFF;--mut:#ABABAB;--card:#121212;--line:#2B2B2B;--brand:#F8E7D3;--onbrand:#000000}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:calc(env(safe-area-inset-top,0px) + 76px)}
+body{overflow-x:clip;margin:0;background:var(--bg);color:var(--ink);font:400 1.0625rem/1.65 "DM Sans",system-ui,-apple-system,"Segoe UI",sans-serif}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--hbg);z-index:30}
+h1,h2,h3{font-family:"Bricolage Grotesque","DM Sans",system-ui,sans-serif;line-height:1.1;margin:0 0 .5em;letter-spacing:-.01em}
+h2{font-size:clamp(1.8rem,4vw,2.6rem)}h3{font-size:1.3rem}
+p{margin:0 0 1em}a{color:inherit}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+section{padding:80px 0;scroll-margin-top:60px}
+.mut{color:var(--mut)}
+:focus-visible{outline:3px solid var(--brand);outline-offset:3px;border-radius:6px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:2px solid transparent;border-radius:999px;padding:12px 24px;font:700 1rem "DM Sans",sans-serif;cursor:pointer;text-decoration:none;transition:transform .15s,background .15s;min-height:48px}
+.btn:hover{transform:translateY(-2px)}
+.b1{background:var(--cream);color:#6D0D27}.b2{border-color:currentColor;background:transparent;color:inherit}
+.b3,.b4{background:var(--brand);color:var(--onbrand)}
+header{--ink:#2A0A14;--mut:#6A4A50;--line:#E6CBB1;--brand:#6D0D27;--onbrand:#F8E7D3;--bg:#F8E7D3;color:var(--ink);position:sticky;top:env(safe-area-inset-top,0px);z-index:40;background:#F8E7D3;backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:68px;gap:16px}
+.logo{display:flex;flex:0 0 auto;align-items:center;gap:8px;text-decoration:none;font:800 1.5rem "Bricolage Grotesque",sans-serif;letter-spacing:.04em}
+.logo i{width:12px;height:12px;border-radius:50%;background:var(--teal);box-shadow:10px 0 0 var(--sun)}
+.logo img{height:36px;width:auto}
+nav{display:flex;align-items:center;gap:6px}
+nav a:not(.btn){padding:8px 14px;text-decoration:none;font-weight:500;border-radius:999px}
+nav a:not(.btn):hover{background:var(--line)}
+.burger{display:none;background:none;border:2px solid var(--line);border-radius:12px;width:48px;height:48px;font-size:1.4rem;color:var(--ink);cursor:pointer}
+@media(max-width:820px){.burger{display:block;margin-left:auto}.nav{gap:10px}.nav .lg{height:26px}nav{position:absolute;left:0;right:0;top:68px;flex-direction:column;align-items:stretch;background:var(--bg);padding:12px 20px 20px;border-bottom:1px solid var(--line);display:none}nav.open{display:flex}nav a:not(.btn){padding:14px}}
+.hero{background:var(--hero);color:var(--cream);padding:72px 0 88px;overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center}
+.hero h1{font-size:clamp(2.8rem,8vw,5.4rem);line-height:.98;margin:0 0 .35em;font-weight:800}
+.hero h1 span{display:block}
+.hero p{max-width:34em;color:#EBCFB6;font-size:1.15rem}
+.row{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.wave{display:flex;align-items:center;justify-content:center;gap:5px;height:260px}
+.wave b{flex:1;max-width:12px;border-radius:99px;animation:pulse 1.5s ease-in-out infinite alternate}
+@keyframes pulse{from{transform:scaleY(.35)}to{transform:scaleY(1)}}
+.wlabel{text-align:center;color:#EBCFB6;font-size:.95rem;margin:0}
+@media(max-width:820px){.hero .wrap{grid-template-columns:1fr}.wave{height:150px}.hero{padding:48px 0 56px}section{padding:56px 0}}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+@media(max-width:820px){.split{grid-template-columns:1fr;gap:28px}}
+.panel{background:var(--hero);color:var(--cream);border-radius:24px;padding:36px;font:600 1.5rem/1.3 "Bricolage Grotesque",sans-serif}
+.grid{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(250px,1fr))}
+.tile{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:24px}
+.tile h3{font-size:1.15rem;margin-bottom:.3em}.tile p{margin:0;color:var(--mut);font-size:1rem}
+.tint{background:linear-gradient(var(--card),var(--card))}
+.cards{display:grid;gap:22px;grid-template-columns:repeat(auto-fit,minmax(250px,1fr))}
+.card{background:var(--card);border:1px solid var(--line);border-top:6px solid var(--c);border-radius:20px;padding:26px;display:flex;flex-direction:column;transition:transform .2s,box-shadow .2s}
+.card:hover{transform:translateY(-4px);box-shadow:0 14px 30px -18px var(--c)}
+.ic{width:56px;height:56px;border-radius:16px;display:grid;place-items:center;font-size:1.7rem;background:color-mix(in srgb,var(--c) 18%,transparent);margin-bottom:14px}
+.card p{color:var(--mut);flex:1}
+.card .acts{display:flex;flex-direction:column;gap:10px}
+.card .btn{padding:10px 18px;min-height:44px}
+.cbtn{background:var(--c);color:#FFF4E8}.lbtn{border-color:var(--c);color:var(--ink);background:transparent}
+.cbanner{background:var(--c);color:#FFF4E8;padding:56px 0 64px}
+.cbanner h1{font-size:clamp(2.2rem,6vw,4rem);margin:12px 0}
+.cbanner p{max-width:40em;font-size:1.15rem;margin:0}
+.back{display:inline-block;color:#FFF4E8;font-weight:700;text-decoration:none;opacity:.9}
+.chips{display:flex;flex-wrap:wrap;gap:10px;padding:0;list-style:none;margin:0}
+.chips li{border:2px solid var(--c);border-radius:999px;padding:6px 16px;font-weight:500}
+.tile.t{border-left:5px solid var(--c)}
+.formcard{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:28px}
+label{display:block;font-weight:700;margin:0 0 6px;font-size:.95rem}
+label small{font-weight:400;color:var(--mut)}
+.f{margin-bottom:16px}
+input,select{width:100%;min-height:50px;border:2px solid var(--line);border-radius:12px;padding:10px 14px;font:inherit;background:var(--bg);color:var(--ink)}
+input:focus,select:focus{border-color:var(--brand);outline:none}
+.ph{display:flex;gap:8px}.ph span{display:grid;place-items:center;border:2px solid var(--line);border-radius:12px;padding:0 14px;font-weight:700;background:var(--bg)}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+@media(max-width:560px){.two{grid-template-columns:1fr}}
+.err{color:#D93535;font-size:.88rem;margin:4px 0 0;min-height:0}
+[aria-invalid=true]{border-color:#D93535}
+.note{background:color-mix(in srgb,var(--brand) 12%,transparent);border-radius:12px;padding:14px 16px;margin-top:16px;font-size:.95rem}
+footer{background:var(--hero);color:#EBCFB6;padding:44px 0;text-align:center}
+footer p{margin:0 0 10px}
+.credit{display:inline-flex;align-items:center;gap:8px;font-size:.92rem;opacity:.85}
+.credit img{height:24px;width:auto}
+.hero :focus-visible,.cbanner :focus-visible,footer :focus-visible{outline-color:var(--cream)}
+.lg{display:block;height:38px;aspect-ratio:8/1;background:var(--brand);-webkit-mask:var(--m) center/contain no-repeat;mask:var(--m) center/contain no-repeat}
+footer .lg{background:var(--cream);margin:0 auto 18px;height:34px}
+nav{order:2}.tgl{display:inline-flex;align-items:center;gap:8px;margin-top:18px;min-height:44px;padding:0 20px;border:2px solid var(--cream);border-radius:999px;background:transparent;color:var(--cream);font:700 .95rem "DM Sans",sans-serif;cursor:pointer;transition:background .15s}.tgl:hover{background:rgba(248,231,211,.16)}.burger{order:4}
+legend{font-weight:700;font-size:.95rem;padding:0;margin-bottom:6px}legend small{font-weight:400;color:var(--mut)}
+.checks{display:grid;gap:8px;grid-template-columns:1fr 1fr}@media(max-width:560px){.checks{grid-template-columns:1fr}}
+.ck{display:flex;align-items:center;gap:10px;margin:0;padding:10px 12px;border:2px solid var(--line);border-radius:12px;background:var(--bg);font-weight:500;cursor:pointer}
+.ck input{width:20px;min-height:20px;height:20px;flex:0 0 auto;accent-color:var(--brand)}
+.plans{display:grid;gap:8px;margin:0 0 16px}
+.plan{display:block;width:100%;text-align:left;font:inherit;color:var(--ink);background:var(--bg);border:1px solid var(--line);border-radius:12px;padding:10px 12px;cursor:pointer;transition:border-color .15s}.plan:hover{border-color:var(--c)}
+.pn{display:block;font-weight:700;font-size:.92rem;line-height:1.3;margin-bottom:2px}
+.pp{display:block;color:var(--mut)}.pp b,.price b{color:var(--ink);font-size:1.15rem}.pp s,.price s{margin-right:6px}.pp span,.price span{font-weight:700;color:var(--ink)}
+.bd,.badge{display:inline-block;background:color-mix(in srgb,var(--c) 16%,transparent);border-radius:999px;padding:1px 10px;font-size:.78rem;font-weight:700;margin-top:4px}
+.tile .price,.price{font-size:1rem;color:var(--mut);margin:0 0 8px}
+dialog{border:0;border-radius:22px;padding:0;width:min(520px,calc(100% - 28px));max-height:calc(100% - 40px);background:var(--card);color:var(--ink);box-shadow:0 30px 80px -20px rgba(0,0,0,.5)}
+dialog::backdrop{background:rgba(0,0,0,.55)}
+.dc{padding:24px}.dh{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px}
+.x{width:40px;height:40px;border-radius:50%;border:2px solid var(--line);background:none;color:var(--ink);font-size:1.4rem;line-height:1;cursor:pointer}
+.pnote{background:color-mix(in srgb,var(--c) 12%,transparent);border-radius:12px;padding:10px 14px;font-size:.95rem}
+.dc ul{padding-left:20px;margin:0 0 20px}.dc h4{margin:0 0 6px;font:700 1rem "DM Sans",sans-serif}
+.adm{display:block;margin-top:14px;font-size:.78rem;opacity:.45;color:inherit;text-decoration:none}.adm:hover{opacity:.9}
+[hidden]{display:none!important}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<header><div class="wrap nav">
+  <a class="logo" href="#home" aria-label="The INFUSER home"><span class="lg" role="img" aria-label="The INFUSER"></span></a>
+  <button class="burger" id="burger" aria-label="Toggle menu" aria-expanded="false" aria-controls="menu">☰</button>
+  <nav id="menu" aria-label="Main">
+    <a href="#home">Home</a><a href="#about">About</a><a href="#courses">Courses</a><a href="#contact">Contact</a>
+    <button class="btn b3" onclick="goEnquire()">Enquire Now</button>
+  </nav>
+</div></header>
+
+<main>
+<div id="home">
+  <div class="hero" id="top"><div class="wrap">
+    <div>
+      <h1><span>Learn.</span><span>Grow.</span><span>Express.</span><span>Become More.</span></h1>
+      <p>INFUSER is a place for learning, communication, confidence and personal development, built for school students and their parents.</p>
+      <div class="row"><a class="btn b1" href="#courses">Explore Our Courses</a><button class="btn b2" onclick="goEnquire()">Enquire Now</button></div>
+      <button class="tgl" id="theme" type="button" aria-label="Switch to dark mode">☾ Dark mode</button>
+    </div>
+    <div><div class="wave" id="wave" aria-hidden="true"></div><p class="wlabel">Four courses. One voice that’s yours.</p></div>
+  </div></div>
+
+  <section id="about"><div class="wrap split">
+    <div>
+      <h2>Education that helps students speak up and stand tall</h2>
+      <p class="mut">INFUSER focuses on practical skills that students use every day: speaking with confidence, communicating clearly, building character and growing as people.</p>
+      <p class="mut">Our programs are made for school students from Class 1 to Class 12, in simple language and with a student-first approach.</p>
+    </div>
+    <div class="panel">Knowledge matters. Knowing how to share it matters just as much.</div>
+  </div></section>
+
+  <section style="background:var(--card);border-block:1px solid var(--line)"><div class="wrap">
+    <h2>Why choose INFUSER?</h2>
+    <div class="grid" id="why" style="margin-top:28px"></div>
+  </div></section>
+
+  <section id="courses"><div class="wrap">
+    <h2>Our courses</h2>
+    <p class="mut" style="max-width:36em">Four programs, each focused on a skill students can use in school and in life.</p>
+    <div class="cards" id="cards" style="margin-top:28px"></div>
+  </div></section>
+
+  <section id="contact" style="background:var(--card);border-top:1px solid var(--line)"><div class="wrap split" style="align-items:start">
+    <div>
+      <span class="lg" role="img" aria-label="The INFUSER" style="margin-bottom:18px"></span>
+      <h2>Ask about our courses</h2>
+      <p class="mut">Fill in the form and your enquiry will open in WhatsApp, ready to send. You can also message us directly.</p>
+      <p><strong>WhatsApp:</strong> <a href="https://wa.me/917051140898" id="waNum">+91 70511 40898</a></p>
+      <a class="btn b4" id="waDirect" href="https://wa.me/917051140898" target="_blank" rel="noopener">Chat on WhatsApp</a>
+    </div>
+    <div class="formcard" id="enquire" style="scroll-margin-top:90px">
+      <h3>Enquiry form</h3>
+      <form id="form" novalidate>
+        <div class="f"><label for="name">Student name</label><input id="name" autocomplete="name" required><p class="err" id="e-name" role="alert"></p></div>
+        <div class="f"><label for="phone">Phone number</label><div class="ph"><span>+91</span><input id="phone" type="tel" inputmode="numeric" maxlength="10" autocomplete="tel-national" placeholder="10-digit mobile number" required></div><p class="err" id="e-phone" role="alert"></p></div>
+        <div class="f"><label for="email">Email address <small>(optional)</small></label><input id="email" type="email" autocomplete="email"><p class="err" id="e-email" role="alert"></p></div>
+        <div class="two">
+          <div class="f"><label for="cls">Student’s class</label><select id="cls" required></select><p class="err" id="e-cls" role="alert"></p></div>
+          <div class="f"><label for="school">School name</label><input id="school" required><p class="err" id="e-school" role="alert"></p></div>
+        </div>
+        <fieldset class="f" style="border:0;padding:0;margin:0 0 16px"><legend>Interested course(s) <small>(choose one or more)</small></legend><div class="checks" id="course" tabindex="-1"></div><p class="err" id="e-course" role="alert"></p></fieldset>
+        <div class="f"><label for="plan">Preferred learning option</label><select id="plan" required></select><p class="err" id="e-plan" role="alert"></p></div>
+        <button class="btn b4" type="submit" style="width:100%">Submit Enquiry on WhatsApp</button>
+        <div class="note" id="note" hidden aria-live="polite"></div>
+      </form>
+    </div>
+  </div></section>
+</div>
+<div id="cpage" hidden></div>
+</main>
+
+<footer><div class="wrap">
+  <span class="lg" role="img" aria-label="The INFUSER"></span>
+  <p>© 2026 INFUSER. All Rights Reserved.</p>
+  <div class="credit">Built by <img id="rLogo" alt="Team Ruhaan logo" hidden> <strong>Team Ruhaan</strong></div>
+  <a class="adm" id="adminLink" href="/admin" hidden>Admin</a>
+</div></footer>
+
+<script>
+/* ---- Editable content: later this can be loaded from an admin dashboard / API ---- */
+const SITE = {
+  whatsapp: "917051140898",
+  logo: "data:image/png;base64,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",  // official INFUSER logo (transparent PNG, used as a colour mask)
+  ruhaanLogo: "",    // set to the Team Ruhaan logo URL when available
+  why: [
+    ["Skill-based learning","Programs built around skills students can practise and use."],
+    ["Personal development","Growth in character, habits and self-awareness."],
+    ["Better communication","Speaking and listening skills that improve with practice."],
+    ["Confidence building","Students learn to express themselves without fear."],
+    ["Student-focused","Simple language and a friendly approach for every age."],
+    ["Practical knowledge","Learning that connects to school and everyday life."]
+  ],
+  plans: [
+    {id:"institute",name:"Institute-Based Group Learning",badge:"Institute Special Offer",old:"₹899",price:"₹499",per:"/month",
+     note:"Monthly enrolment. Classes are held in groups at the INFUSER institute. This is not one-to-one or private tuition.",
+     desc:"Join INFUSER at our institute and become part of an engaging group-learning environment. Learn alongside other students through structured classes, interactive sessions, practical activities and guided instruction.",
+     points:["Classes conducted at the INFUSER institute","Group-based learning in structured batches","Interactive classroom sessions","Practical learning activities","Guided instruction","Monthly enrolment"]},
+    {id:"school",name:"School Workshops & Bootcamps",badge:"Exclusive School Offer",old:"₹899",price:"₹199",per:"",
+     note:"₹199 is the school workshop/program offer price. It is not a monthly subscription.",
+     desc:"Bring the INFUSER learning experience directly to schools through engaging workshops and bootcamps. Students participate in interactive sessions, practical activities and group-based learning experiences designed to develop useful skills and confidence.",
+     points:["Workshops conducted at schools","Interactive bootcamp sessions","Group activities","Practical skill development","Special pricing for school students"]}
+  ],
+  courses: [
+    {id:"english",name:"English Speaking",icon:"💬",color:"#6D0D27",
+     intro:"Build confidence in spoken English and communicate clearly in everyday situations.",
+     about:"A program designed to help students develop confidence in spoken English and communicate effectively in everyday situations.",
+     topics:[["Spoken English fundamentals","The basics every confident speaker starts with."],["Everyday conversations","Practise talking about daily life, school and friends."],["Grammar and sentence formation","Build correct, natural sentences."],["Vocabulary building","Learn new words and use them well."],["Pronunciation improvement","Say words clearly and correctly."],["Speaking fluency","Speak smoothly without long pauses."],["Public speaking","Speak in front of a group with ease."],["Communication confidence","Lose the hesitation, keep the message."]],
+     skills:["Fluent speaking","Clear pronunciation","Wider vocabulary","Confident conversation"],
+     why:"Good spoken English helps students in class, in interviews later on and in everyday life."},
+    {id:"personality",name:"Personality Development",icon:"🌟",color:"#A33B45",
+     intro:"Grow in confidence and become a better communicator and leader.",
+     about:"A program focused on helping students develop confidence, improve their personality and become better communicators.",
+     topics:[["Self-confidence building","Believe in your own abilities."],["Communication skills","Share ideas clearly and listen well."],["Body language","Stand, sit and gesture with presence."],["Public speaking","Handle the stage and the spotlight."],["Presentation skills","Organise and deliver ideas with impact."],["Interpersonal skills","Work and connect well with others."],["Leadership qualities","Guide and inspire a team."],["Personal growth and self-awareness","Know your strengths and keep improving."]],
+     skills:["Self-confidence","Teamwork","Presentation","Leadership","Self-awareness"],
+     why:"These skills help students in group work, class presentations, friendships and everyday decisions."},
+    {id:"voice",name:"Voice Training",icon:"🎙️",color:"#8A5A1E",
+     intro:"Improve your voice, clarity and expression through practical training.",
+     about:"A practical skill-development program designed to help students improve their voice, speaking clarity and expression.",
+     topics:[["Voice clarity","Make every word easy to understand."],["Pronunciation and articulation","Shape sounds precisely."],["Voice modulation","Vary pitch and tone to keep listeners engaged."],["Voice projection","Be heard without shouting."],["Speaking rhythm","Find a steady, natural pace."],["Expression and delivery","Let feeling and meaning show in your voice."],["Effective speaking techniques","Tools used by strong speakers."],["A confident speaking voice","Sound like the best version of you."]],
+     skills:["Clear articulation","Projection","Expressive delivery","Controlled pace"],
+     why:"A clear, confident voice makes every talk, reading and conversation more effective."},
+    {id:"islamic",name:"Islamic and Spiritual Development",icon:"🌙",color:"#2F5D50",
+     intro:"Learn Islamic knowledge, values and character for everyday life.",
+     about:"A learning program focused on Islamic knowledge, spiritual awareness, values and personal development, presented in a respectful and welcoming way.",
+     topics:[["Understanding Islamic teachings","Learn the foundations of the faith."],["Islamic values and principles","Explore the values that guide daily life."],["Spiritual awareness","Build mindfulness and connection."],["Character development","Grow honesty, patience and kindness."],["Good manners and ethics","Practise respect in words and actions."],["Personal growth","Reflect and improve step by step."],["Positive values in everyday life","Apply what you learn at home and school."]],
+     skills:["Good character","Mindfulness","Ethical decision-making","Respectful conduct"],
+     why:"Strong values and spiritual awareness give students direction, calm and good character."}
+  ]
+};
+const $=id=>document.getElementById(id), C=SITE.courses, P=SITE.plans;
+
+/* Branding slots */
+document.querySelectorAll(".lg").forEach(e=>e.style.setProperty("--m","url("+SITE.logo+")"));
+if(SITE.ruhaanLogo){$("rLogo").src=SITE.ruhaanLogo;$("rLogo").hidden=false}
+
+/* Waveform */
+const cols=['#F8E7D3','#E7B79F','#D58F7C','#F8E7D3'];
+$("wave").innerHTML=Array.from({length:26},(_,i)=>`<b style="height:${25+Math.abs(Math.sin(i*.65))*70}%;background:${i%7==3?'#C98A6B':cols[i%4]};animation-delay:${(i*.07).toFixed(2)}s"></b>`).join("");
+
+/* Sections */
+$("why").innerHTML=SITE.why.map(w=>`<div class="tile"><h3>${w[0]}</h3><p>${w[1]}</p></div>`).join("");
+$("cards").innerHTML=C.map(c=>`<article class="card" style="--c:${c.color}"><div class="ic" aria-hidden="true">${c.icon}</div><h3>${c.name}</h3><p>${c.intro}</p>${planBtns(c)}<div class="acts"><a class="btn lbtn" href="#${c.id}">Learn More</a><button class="btn cbtn" onclick="goEnquire('${c.id}')">Enquire Now</button></div></article>`).join("");
+
+/* Form options */
+$("cls").innerHTML='<option value="">Select class</option>'+Array.from({length:12},(_,i)=>`<option>Class ${i+1}</option>`).join("");
+$("course").innerHTML=C.map(c=>`<label class="ck"><input type="checkbox" value="${c.name}"> ${c.name}</label>`).join("");
+$("plan").innerHTML='<option value="">Select learning option</option>'+P.map(p=>`<option value="${p.id}">${p.name}</option>`).join("");
+
+/* Plans: pricing options and details dialog */
+const planDlg=document.createElement("dialog");document.body.appendChild(planDlg);
+planDlg.addEventListener("click",e=>{if(e.target===planDlg)planDlg.close()});
+function priceHtml(p){return `<s>${p.old}</s> <b>${p.price}</b>${p.per?`<span>${p.per}</span>`:""}`}
+function planBtns(c){return `<div class="plans">`+P.map(p=>`<button type="button" class="plan" aria-haspopup="dialog" onclick="openPlan('${c.id}','${p.id}')"><span class="pn">${p.name}</span><span class="pp">${priceHtml(p)}</span><span class="bd">${p.badge}</span></button>`).join("")+`</div>`}
+function planTiles(c){return P.map(p=>`<div class="tile t"><span class="badge">${p.badge}</span><h3 style="margin-top:8px">${p.name}</h3><p class="price">${priceHtml(p)}</p><p style="margin-bottom:16px">${p.note}</p><div class="row" style="margin:0"><button type="button" class="btn lbtn" onclick="openPlan('${c.id}','${p.id}')">View Details</button><button type="button" class="btn cbtn" onclick="goEnquire('${c.id}','${p.id}')">Enquire Now</button></div></div>`).join("")}
+function openPlan(cid,pid){
+  const c=C.find(x=>x.id===cid),p=P.find(x=>x.id===pid);
+  planDlg.style.setProperty("--c",c.color);
+  planDlg.setAttribute("aria-label",p.name+" – "+c.name);
+  planDlg.innerHTML=`<div class="dc"><div class="dh"><span class="badge" style="margin:0">${p.badge}</span><button type="button" class="x" aria-label="Close" onclick="planDlg.close()">×</button></div><h3>${p.name}</h3><p class="mut" style="margin-bottom:8px">${c.name}</p><p class="price">${priceHtml(p)}</p><p class="pnote">${p.note}</p><p>${p.desc}</p><h4>What’s included</h4><ul>${p.points.map(x=>`<li>${x}</li>`).join("")}</ul><button type="button" class="btn cbtn" onclick="planDlg.close();goEnquire('${c.id}','${p.id}')">Enquire About This Course</button></div>`;
+  planDlg.showModal();
+}
+
+/* Course page */
+function coursePage(c){
+  const others=C.filter(x=>x.id!==c.id).map(x=>`<a class="btn lbtn" style="--c:${x.color}" href="#${x.id}">${x.name}</a>`).join("");
+  return `<div style="--c:${c.color}">
+  <div class="cbanner"><div class="wrap"><a class="back" href="#courses">‹ All courses</a><div style="font-size:2.4rem" aria-hidden="true">${c.icon}</div><h1>${c.name}</h1><p>${c.about}</p>
+  <div class="row"><button class="btn b1" onclick="goEnquire('${c.id}')">Enquire About This Course</button></div></div></div>
+  <section><div class="wrap"><h2>What you will learn</h2><div class="grid" style="margin-top:24px">${c.topics.map(t=>`<div class="tile t"><h3>${t[0]}</h3><p>${t[1]}</p></div>`).join("")}</div></div></section>
+  <section><div class="wrap"><h2>Learning options and pricing</h2><div class="grid" style="margin-top:24px">${planTiles(c)}</div></div></section>
+  <section style="background:var(--card);border-block:1px solid var(--line)"><div class="wrap split"><div><h2>Skills you can develop</h2><ul class="chips">${c.skills.map(s=>`<li>${s}</li>`).join("")}</ul></div><div><h3>Why it may be useful</h3><p class="mut">${c.why}</p><button class="btn cbtn" onclick="goEnquire('${c.id}')">Enquire About This Course</button></div></div></section>
+  <section><div class="wrap"><h3>Explore other courses</h3><div class="row" style="margin-top:12px">${others}</div></div></section></div>`;
+}
+
+/* Routing: plain #hash only */
+function route(){
+  const h=location.hash.slice(1), c=C.find(x=>x.id===h);
+  $("home").hidden=!!c; $("cpage").hidden=!c;
+  if(c){$("cpage").innerHTML=coursePage(c);document.title=c.name+" – INFUSER";scrollTo(0,0)}
+  else{document.title="INFUSER – Learn. Grow. Express. Become More.";const t=$(h);t?t.scrollIntoView():scrollTo(0,0)}
+}
+addEventListener("hashchange",route);
+function goEnquire(id,pid){
+  const c=C.find(x=>x.id===id);
+  if(c)document.querySelectorAll("#course input").forEach(i=>i.checked=i.value===c.name);
+  if(pid)$("plan").value=pid;
+  if(location.hash==="#enquire")route();else location.hash="enquire";
+  setTimeout(()=>$("name").focus({preventScroll:true}),400);
+}
+
+/* Menu */
+$("burger").onclick=()=>{const o=$("menu").classList.toggle("open");$("burger").setAttribute("aria-expanded",o)};
+$("menu").addEventListener("click",e=>{if(e.target.closest("a,button")){$("menu").classList.remove("open");$("burger").setAttribute("aria-expanded","false")}});
+
+/* Form + WhatsApp */
+const sel=()=>[...document.querySelectorAll("#course input:checked")].map(i=>i.value);
+$("phone").addEventListener("input",e=>e.target.value=e.target.value.replace(/\D/g,"").slice(0,10));
+$("form").addEventListener("submit",e=>{
+  e.preventDefault();
+  const v=k=>$(k).value.trim(), rules={
+    name:()=>v("name")?"":"Enter the student’s name.",
+    phone:()=>/^[6-9]\d{9}$/.test(v("phone"))?"":"Enter a valid 10-digit Indian mobile number.",
+    email:()=>!v("email")||/^\S+@\S+\.\S+$/.test(v("email"))?"":"Enter a valid email address or leave this blank.",
+    cls:()=>v("cls")?"":"Select the student’s class.",
+    school:()=>v("school")?"":"Enter the school name.",
+    course:()=>sel().length?"":"Choose at least one course.",
+    plan:()=>v("plan")?"":"Choose a learning option."
+  };
+  let bad=null;
+  for(const k in rules){const m=rules[k]();$("e-"+k).textContent=m;$(k).setAttribute("aria-invalid",!!m);if(m&&!bad)bad=k}
+  if(bad){$(bad).focus();return}
+  const msg=["Hello! I am interested in joining INFUSER.","",
+    "Student Name: "+v("name"),"Phone Number: +91 "+v("phone"),
+    ...(v("email")?["Email: "+v("email")]:[]),
+    "Class: "+v("cls"),"School Name: "+v("school"),"Interested Course(s): "+sel().join(", "),"Preferred Learning Option: "+P.find(p=>p.id===v("plan")).name,"",
+    "I would like to know more about "+(sel().length>1?"these courses":"this course")+" and the admission process."].join("\n");
+  const url="https://wa.me/"+SITE.whatsapp+"?text="+encodeURIComponent(msg);
+  let w=null; try{w=window.open(url,"_blank","noopener")}catch(_){}
+  /* If the INFUSER backend is present, also record the enquiry (silently skipped otherwise). WhatsApp has already been opened. */
+  const saveP=fetch("/api/enquiries",{method:"POST",headers:{"Content-Type":"application/json"},keepalive:true,body:JSON.stringify({name:v("name"),phone:v("phone"),email:v("email"),cls:v("cls"),school:v("school"),courses:sel(),plan:P.find(p=>p.id===v("plan")).name})}).then(r=>r.ok).catch(()=>false);
+  const n=$("note"); n.hidden=false;
+  n.innerHTML=(w===null?"WhatsApp didn’t open automatically. ":"WhatsApp should now open with your message ready. ")+
+    "Review it and press Send. Your enquiry is only delivered once you send it. <a href=\""+url+"\" target=\"_blank\" rel=\"noopener\"><strong>Open WhatsApp again</strong></a>";
+saveP.then(ok=>{if(ok)n.insertAdjacentHTML("beforeend","<br>Your enquiry details have also been recorded with INFUSER. Admission is confirmed only by INFUSER.")});
+});
+fetch("/api/health").then(r=>{if(r.ok)$("adminLink").hidden=false}).catch(()=>{});
+/* Theme switch: light by default, choice is remembered */
+const root=document.documentElement;
+function setTheme(t,save){root.dataset.theme=t;const b=$("theme"),d=t==="dark";b.textContent=d?"☀ Light mode":"☾ Dark mode";b.setAttribute("aria-label",d?"Switch to light mode":"Switch to dark mode");if(save)try{localStorage.setItem("infuser-theme",t)}catch(_){}}
+let t0="light";try{t0=localStorage.getItem("infuser-theme")==="dark"?"dark":"light"}catch(_){}
+setTheme(t0);
+$("theme").onclick=()=>setTheme(root.dataset.theme==="dark"?"light":"dark",true);
+route();
+</script>
+</body>
+</html>
